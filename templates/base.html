@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>СБЭУ КОМАР</title>
+		<link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+          <link rel='icon' href='https://avatars.mds.yandex.net/i?id=434fa51c3e4ee8e0dd99d32708328ddf_sr-5905899-images-thumbs&n=13' type='image/png'>
+	</head>
+	<body>
+		<h1 align="center"><b>СДЕЛАНО В РОССИИ 🇷🇺</b></h1>
+		<main role="main" class="container">
+			{% with messages = get_flashed_messages() %}
+		 {% if messages %}
+		  <ul class="ul_cl">
+		  {% for message in messages %}
+			<li>{{ message }}</li>
+		  {% endfor %}
+		  </ul>
+		 {% endif %}
+		{% endwith %}
+    	{% block content %}{% endblock %}
+    </main>
+	</body>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 P1Jack. All rights reserved.</p>
+        <p>Designed by Timurka AKA P1Jack</p>
+        <p>Back to main page: <a href="/">Home page</a></p>
+    </div>
+</footer>
+</html>

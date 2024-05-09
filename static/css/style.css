@@ -1,0 +1,50 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    background-color: #040404;
+    font-size: 200%;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    color: #FF9BAA;
+}
+
+a:hover {
+    color: #FFD1DC;
+}
+
+h1 {
+    color: #3EB489;
+}
+
+h5 {
+    color: #FF9BAA;
+}
+
+h2 {
+    color: #FF9BAA;
+}
+
+p {
+    color: #FFD1DC;
+}
+
+i {
+    color: #999;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.ul_cl {
+    color: red;
+}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head><link rel="stylesheet" type="text/css" href="{{ style }}" ></head>
+<form class="1_form" method="post" action="/num1">
+    <p>Введите число 1 (через запятую):</p>
+    <input name="num1">
+    <p>Введите систему счисления первого числа:</p>
+    <select name="base1">
+        <option value="2">2</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="16">16</option>
+    </select>
+    <p>Введите число 2 (через запятую):</p>
+    <input name="num2">
+    <p>Введите систему счисления второго числа:</p>
+    <select name="base2">
+        <option value="2">2</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="16">16</option>
+    </select>
+    <p>Введите систему счисления ответа:</p>
+    <select name="res_base">
+        <option value="2">2</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="16">16</option>
+    </select>
+    <p>Введите знак:</p>
+    <select name="sign">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select> <br><br>
+    <button type="submit" class="btn btn-primary">Выдать ответ</button>
+</form>
+{% endblock %}

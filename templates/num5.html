@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head><link rel="stylesheet" type="text/css" href="{{ style }}" ></head>
+<form class="5_form" method="post" action="/num5">
+    <p>Введите число (через запятую):</p>
+    <input name="num">
+    <p>Введите d (необязательно, по умолчанию 127):</p>
+    <input name="d">
+    <p>Введите формат (необязательно, по умолчанию 32 бита):</p>
+    <input name="format1">
+    <p>Введите систему счисления:</p>
+    <select name="base">
+        <option value="2">2</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="16">16</option>
+    </select> <br><br>
+    <button type="submit" class="btn btn-primary">Выдать ответ</button>
+</form>
+{% endblock %}
